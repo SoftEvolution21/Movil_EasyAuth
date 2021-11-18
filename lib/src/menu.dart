@@ -1,3 +1,4 @@
+import 'package:easyauth/solicitante/login.dart';
 import 'package:easyauth/src/home.dart';
 import 'package:flutter/material.dart';
 
@@ -12,29 +13,6 @@ class Menu extends StatelessWidget {
         color: Theme.of(context).scaffoldBackgroundColor,
         child: ListView(
           children: <Widget>[
-
-            /*DrawerHeader(//Opcion 1
-              decoration: BoxDecoration(
-                color: Colors.blue,
-              ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  CircleAvatar(
-                    radius: 60.0,
-                    backgroundImage: AssetImage('assets/img/UTS4.png'),
-                  ),
-                  /*SizedBox(
-                    height: 5.0,
-                  ),
-                  Text(
-                    'EasyAuth', 
-                    style: TextStyle(fontSize: 30.0),
-                  )*/
-                ],
-              ),
-            )*/
 
             DrawerHeader(//opción 2
               decoration: BoxDecoration(
@@ -79,6 +57,7 @@ class Menu extends StatelessWidget {
             ListTile(
               leading: Icon(Icons.login, color: Theme.of(context).primaryColorDark,),
               title: Text('Login',style: Theme.of(context).textTheme.body2,),
+              onTap: () => Navigator.pushReplacementNamed(context, Login.routName),
             ),
             Divider(),
             ListTile(

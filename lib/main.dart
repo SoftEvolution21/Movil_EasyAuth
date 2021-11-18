@@ -1,3 +1,6 @@
+import 'package:easyauth/docente/docente.dart';
+import 'package:easyauth/solicitante/listado.dart';
+import 'package:easyauth/solicitante/login.dart';
 import 'package:easyauth/src/home.dart';
 import 'package:flutter/material.dart';
 
@@ -18,6 +21,9 @@ class MyApp extends StatelessWidget {
       initialRoute: HomePage.routName,
       routes: {
         HomePage.routName: (BuildContext context) => HomePage(),
+        Login.routName: (BuildContext context) => Login(),
+        ForoDocente.routName: (BuildContext context) => ForoDocente(),
+        ListadoPermisos.routName: (BuildContext context) => ListadoPermisos(),
       },
 
       
