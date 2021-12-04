@@ -1,12 +1,13 @@
 <?php  
-	session_start();
+	
+	
 	//conectarse evitando ataques de inicio de sesión --SEGURIDAD DE CONEXION--
-	$connect = new mysqli('localhost', 'root','','db_permisos');
+	$connect = new mysqli('localhost', 'root','','db_permisos2');
 
 	if($connect){
-		echo "Conexión exitosa";
+		//echo "Welcome";
 	} else{
-		echo "Falló la conexión";
+		echo "Falló la conexión, revise ip o firewall";
 		exit();
 	}
 
