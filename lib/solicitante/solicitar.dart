@@ -40,8 +40,6 @@ class _SolicitarState extends State<Solicitar> {
     String appaterno = parametro['paterno'];
     String apmaterno = parametro['materno'];
 
-    List<dynamic> mapPermi = parametro['nopermisos'];
-
     //print(mapPermi);
 
     void addData(){
@@ -106,18 +104,6 @@ class _SolicitarState extends State<Solicitar> {
                     if(num <=0) return "Número inválido";
                     
                     else if(value.isEmpty) return "Ingrese el número de permiso";
-
-                    /*mapPermi.forEach((element) {
-                      if(value = element['No_permiso']){
-
-                        return "Este número de permiso ya existe.";
-                      }
-                    });*/
-                     /*if( num == mapPermi[0]['No_permiso']){
-
-                        return "Este número de permiso ya existe.";
-                      }*/
-
                    
                     //return value;
                   },
